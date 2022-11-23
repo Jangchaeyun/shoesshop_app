@@ -51,7 +51,7 @@ function SippingScreen() {
             space={6}
             mt={5}
           >
-            {ShippingInputs.map((i) => (
+            {ShippingInputs.map((i, index) => (
               <FormControl key={index}>
                 <FormControl.Label
                   _text={{
