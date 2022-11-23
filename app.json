@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/favicon.png",
         "backgroundColor": "#000000"
-      }
+      },
+      "package": "com.sally1234.shoesshop_app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "adbd921d-4e1d-4863-bdc8-a99f17fb6f6f"
+      }
     }
   }
 }
