@@ -18,7 +18,7 @@ const ShippingInputs = [
   },
 ]
 
-function SippingScreen() {
+function ShippingScreen() {
   return (
     <Box
       flex={1} 
@@ -90,4 +90,4 @@ function SippingScreen() {
   )
 }
 
-export default SippingScreen
+export default ShippingScreen

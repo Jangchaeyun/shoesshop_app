@@ -4,9 +4,9 @@ import { Entypo, AntDesign, FontAwesome, FontAwesome5, MaterialCommunityIcons } 
 import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 import Colors from '../color';
-import HomeScreen from '../Screens/HomeScreen'
 import ProfileScreen from '../Screens/ProfileScreen';
 import CartScreen from '../Screens/CartScreen';
+import StackNav from './StackNav';
 
 const Tab = createBottomTabNavigator();
 const CustomTab = ({ children, onPress }) => (
@@ -39,7 +39,7 @@ const BottomNav = () => {
     >
         <Tab.Screen
             name="main"
-            component={HomeScreen}
+            component={StackNav}
             options={{
                 tabBarIcon:({ focused }) => (
                     <Center>
