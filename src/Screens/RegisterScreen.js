@@ -3,7 +3,7 @@ import React from 'react';
 import Colors from '../color';
 import { MaterialIcons, Ionicons, FontAwesome } from '@expo/vector-icons';
 
-function RegisterScreen() {
+function RegisterScreen({navigation}) {
   return (
     <Box flex={1} bg={Colors.black}>
       <Image
@@ -74,10 +74,14 @@ function RegisterScreen() {
           w="40%" 
           rounded={50} 
           bg={Colors.main}
+          onPress={() => navigation.navigate('Login')}
         >
           회원가입
         </Button>
-        <Pressable mt={4}>
+        <Pressable
+          mt={4}
+          onPress={() => navigation.navigate('Login')}
+        >
           <Text color={Colors.deepestGray}>
             로그인
           </Text>

@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import { Button, Center, HStack, Image, Modal, Pressable, Text, VStack } from 'native-base';
 import React, { useState } from 'react';
 import Colors from '../color';
@@ -22,6 +23,7 @@ const OrdersInfos = [
 ]
 
 const OrderModel = () => {
+    const navigation = useNavigation()
     const [showModel, setShowModel] = useState(false)
   return (
     <Center>
@@ -90,17 +92,20 @@ const OrderModel = () => {
                 <Button
                     w="full"
                     mt={4}
-                    bg={Colors.black}
+                    bg={Colors.main}
                     h={45}
                     _text={{
                         color:Colors.white,
                     }}
-                    onPress={() => setShowModel(false)}
+                    onPress={() => {
+                        navigation.navigate("Home")
+                        setShowModel(false)
+                    }}
                     _pressed={{
                         bg:Colors.black,  
                     }}
                 >
-                    결제하기
+                    나중에 결제하기
                 </Button>
             </Modal.Footer>
         </Modal.Content>
